@@ -20,5 +20,5 @@ for file in os.listdir(directory):
         
 df_final = pd.concat(dfs, ignore_index=True)
 
-df_final.to_excel("institutions_data.xlsx", index=False)
+df_final.to_csv("institutions_data.csv", index=False)
 print("All data merged!")
